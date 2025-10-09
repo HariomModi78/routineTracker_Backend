@@ -1,5 +1,5 @@
 const Task = require("../models/Task");
-const UserProgress = require("../models/userProgress");
+const UserProgress = require("../models/UserProgress");
 exports.getTodayAndTomorrowTasks = async (req,res)=>{
     try{
         const today = new Date();
@@ -70,4 +70,5 @@ exports.deleteTask = async(req,res)=>{
     }catch(e){
         res.status(500).json({error:e.message});
     }
+
 }
