@@ -1,6 +1,6 @@
 const User = require("../models/User");
 const admin = require("firebase-admin");
-const UserProgress = require("../models/userProgress");
+const UserProgress = require("../models/UserProgress");
 exports.verifyUser = async (req,res)=>{
   try{
       const serviceAccount = {
